@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap');
+
+
+body {
+    margin: 0;
+    font-family: "Rubik Vinyl", serif;
+    font-weight: 1000;
+    font-size: larger;
+    font-style: italic;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #20C997;
+    color: #1B1F3B;
+}
+
+.menu-icon{
+    display: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}
+
+.nav-links li {
+    text-decoration: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #1B1F3B;
+    font-size: 22px;
+}
+
+
+@media (max-width: 930px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      background-color: #080505;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      width: 200px;
+      padding: 10px;
+      border-radius: 5px;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .menu-icon {
+        display: flex;
+    }
+  }
+  
